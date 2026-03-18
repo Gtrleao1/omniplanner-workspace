@@ -8,7 +8,7 @@ Feito pelo [Ratos de IA](https://ratosdeia.com.br) pra alunos do curso **Claude 
 
 **1. Clone o repositório**
 ```bash
-git clone https://github.com/ratosdeia/ccos-ratos.git
+git clone https://github.com/dobralabs/ccos-ratos.git
 cd ccos-ratos
 ```
 
