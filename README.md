@@ -36,6 +36,7 @@ O Claude vai te fazer algumas perguntas e configurar o sistema pro seu negócio.
 **Skills prontas pra usar:**
 - `/setup` — configura o sistema pro seu negócio (comece por aqui)
 - `/iniciar` — carrega o contexto do negócio no começo de cada sessão de trabalho
+- `/syncar` — salva o trabalho no GitHub (commit + push, configura na primeira vez)
 - `/carrossel` — cria carrosséis pra Instagram e TikTok com a sua identidade visual
 - `/proposta-comercial` — gera proposta profissional em HTML a partir de um briefing
 - `/publicar-site` — publica qualquer HTML no ar com um link compartilhável

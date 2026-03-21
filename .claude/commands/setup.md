@@ -237,6 +237,12 @@ Após gerar todos os arquivos, envie uma mensagem de encerramento:
 > - Estrutura de pastas pro seu perfil de [perfil detectado]
 > - _configurar-mcps.md — [N] MCPs recomendados pro que você faz
 >
+> **Duas coisas importantes antes de continuar:**
+>
+> 1. Se você tiver chaves de API (como a da Anthropic), guarde sempre num arquivo chamado `.env` — ele já está protegido e nunca vai ser enviado pro GitHub por engano.
+>
+> 2. Para não perder seu trabalho, conecte esse workspace ao GitHub rodando `/syncar`. Leva 2 minutos e depois o sistema salva automaticamente.
+>
 > **Próximo passo:** instala pelo menos o primeiro MCP do arquivo _configurar-mcps.md.
 > Depois volta aqui e chama `/carrossel` pra criar seu primeiro carrossel,
 > ou `/proposta-comercial` se tiver um cliente esperando."
