@@ -34,8 +34,6 @@ Faça as perguntas em sequência, uma por vez, em conversa natural. Não liste t
 
 "Você já usa o Claude Code há algum tempo, ou é a primeira vez?"
 
-**Se for a primeira vez:** continua normalmente pra Pergunta 3.
-
 **Se já usa há algum tempo:** perguntar:
 
 > "Quer que eu tente carregar o que você já tem configurado em outros projetos, ou prefere configurar do zero aqui?"
@@ -43,9 +41,16 @@ Faça as perguntas em sequência, uma por vez, em conversa natural. Não liste t
 - **Se quiser carregar:** executar o bloco **"Carregamento de contexto existente"** abaixo antes de continuar.
 - **Se preferir do zero:** continua normalmente pra Pergunta 3.
 
+**Se for a primeira vez:** perguntar:
+
+> "Você usa outro assistente de IA com frequência — ChatGPT, Claude na web, Gemini? Se sim, consigo pegar o contexto de lá pra não precisar responder tudo do zero."
+
+- **Se não usa outro assistente:** continua normalmente pra Pergunta 3.
+- **Se usa:** executar o bloco **"Importação de contexto de outro assistente"** abaixo antes de continuar.
+
 ---
 
-#### Bloco: Carregamento de contexto existente
+#### Bloco: Carregamento de contexto existente (Claude Code anterior)
 
 Tentar ler, nessa ordem:
 1. `~/.claude/CLAUDE.md` — CLAUDE.md global (se existir)
@@ -70,6 +75,56 @@ Se não encontrar nada relevante, informar:
 > "Não encontrei contexto salvo de outros projetos. Vamos configurar do zero — leva poucos minutos."
 
 E continuar normalmente pra Pergunta 3.
+
+---
+
+#### Bloco: Importação de contexto de outro assistente (ChatGPT, Claude web, Gemini, etc.)
+
+Mostrar ao usuário o seguinte prompt pra copiar e colar no assistente que ele usa:
+
+---
+
+> **Copia esse prompt e cola no seu assistente de IA:**
+>
+> ```
+> Preciso exportar o contexto do meu negócio das nossas conversas para configurar uma nova ferramenta. Por favor, responda com o que sabe sobre mim nas seguintes categorias — se não souber algo, deixe em branco:
+>
+> NOME: [seu nome completo]
+> NEGÓCIO: [nome do negócio ou projeto]
+> O QUE FAZ: [descrição do que você faz e pra quem, em 1-2 frases]
+> PRINCIPAIS ATIVIDADES: [o que você mais produz ou faz no dia a dia]
+> CLIENTES: [atende clientes externos, uso interno, ou os dois]
+> EQUIPE: [trabalha solo ou tem equipe — quem são]
+> FERRAMENTAS: [ferramentas que você usa com frequência no trabalho]
+> IDENTIDADE VISUAL: [cores, fontes, estilo da marca — se mencionou alguma vez]
+> TOM DE VOZ: [como você prefere escrever e se comunicar]
+> O QUE EVITAR: [o que te incomoda em textos ou respostas de IA]
+> OUTROS DETALHES: [qualquer outro contexto relevante sobre você ou seu negócio]
+> ```
+
+---
+
+Após mostrar o prompt, dizer:
+
+> "Cola isso no [nome do assistente que o usuário mencionou] e traz a resposta aqui."
+
+Aguardar o usuário colar a resposta. Com o que vier:
+
+1. Extrair todas as informações da resposta
+2. Montar um resumo e apresentar pro usuário confirmar:
+
+> "Com base no que você trouxe, aqui está o que vou usar pra configurar:
+>
+> - **Nome / negócio:** [extraído]
+> - **O que faz:** [extraído]
+> - **Tom de voz:** [extraído]
+> - **Ferramentas:** [extraído]
+> - *(... demais campos preenchidos)*
+>
+> Está correto? Tem algo pra corrigir ou adicionar?"
+
+3. Aguardar confirmação ou ajustes
+4. **Pular as perguntas já respondidas** e continuar apenas com o que ficou em branco ou incerto (tipicamente: identidade visual, se não foi mencionada)
 
 ---
 
