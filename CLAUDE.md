@@ -1,14 +1,39 @@
-# Claude Code OS — Kit Ratos de IA
+# Omniplanner — Claude Code OS
 
-Este repositório é o kit de boas-vindas do curso Claude Code OS.
+## O que é esse workspace
+Workspace do Guilherme para planejamento e execução de mídia paga e orgânica, atendendo clientes de perfis variados (B2B, B2C, construção civil, editoras, clubes de assinatura, entre outros).
 
-Se você acabou de clonar esse repositório:
-1. Rode `/setup` pra configurar o sistema pro seu negócio (uns 5 minutos)
-2. Depois rode `/mapear` pra criar skills personalizadas pro que você faz no dia a dia
+**Estrutura de pastas:**
+- `clientes/` — uma pasta por cliente com briefing e proposta
+- `briefings/` — briefings avulsos ou em andamento
+- `propostas/` — propostas comerciais geradas
+- `conteudo/` — materiais de conteúdo orgânico
+- `_contexto/` — memória do negócio, preferências e foco atual
+- `marca/` — identidade visual e design guide
+- `dados/` — arquivos de entrada (imagens, exports, referencias)
+- `templates/skills/` — templates de skills prontos pra personalizar com /mapear
+- `templates/ferramentas/catalogo.md` — APIs e ferramentas disponíveis pra usar em skills
+
+## Sobre o negócio
+Guilherme é prestador de serviço solo, operando pela Omniplanner. Trabalha com planejamento estratégico e execução de mídia paga e orgânica para aquisição, atendendo clientes externos de segmentos variados e também usando o sistema para o próprio negócio.
+
+## O que mais fazemos aqui
+- Planejamento de mídia paga (Meta Ads, Google Ads, LinkedIn Ads)
+- Execução e gestão de campanhas de performance
+- Estratégia de mídia orgânica
+- Propostas comerciais para novos clientes
+- Relatórios e análises de performance
+
+## Clientes e contexto
+Atende clientes externos e uso interno. Perfis variados: B2B, B2C, clubes de assinatura, construção civil, editoras. Trabalha solo.
+
+## Tom de voz
+Direto e sem enrolação. Evitar travessões excessivos, emojis e linguagem robótica. Texto limpo, objetivo e humano.
+
+## Ferramentas conectadas
+Meta Ads, Google Ads, LinkedIn Ads, Hotjar, GA4, Data Studio, RD Station, WhatsApp, WordPress, Asana, Claude, ChatGPT
 
 ---
-
-<!-- Este arquivo será atualizado pelo /setup com o contexto do seu negócio. -->
 
 ## Contexto do negócio
 
