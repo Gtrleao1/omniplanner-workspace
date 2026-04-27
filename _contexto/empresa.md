@@ -11,3 +11,11 @@
 
 ## Contexto adicional
 Atua como prestador de serviço independente. Os clientes têm perfis bem diferentes entre si, o que exige adaptação constante de linguagem, canal e estratégia por cliente.
+
+## Entregas recorrentes
+- **Relatório semanal de performance** — por canal (Google Ads, Meta Ads, Search Console, GA4, LinkedIn Ads) + unificado
+- **Relatório mensal de marketing** — visão consolidada de todas as ações, focado em crescimento
+- **Plano de mídia** — por demanda — campanhas por fase (conscientização, conversão, GrowthLoop), canais, métricas projetadas e investimento
+- **Briefing de landing page e peças de anúncio** — por demanda — documento de briefing claro pra criação
+- **Apresentações** — por demanda — decks para clientes e estratégias
+- **Conteúdo para redes sociais** — recorrente — criação de conteúdo orgânico para as redes
