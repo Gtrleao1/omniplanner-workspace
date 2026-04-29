@@ -11,6 +11,7 @@ Workspace do Guilherme para planejamento e execução de mídia paga e orgânica
 - `_contexto/` — memória do negócio, preferências e foco atual
 - `marca/` — identidade visual e design guide
 - `dados/` — arquivos de entrada (imagens, exports, referencias)
+- `estudos/` — referências, frameworks e materiais de estudo
 - `templates/skills/` — templates de skills prontos pra personalizar com /mapear
 - `templates/ferramentas/catalogo.md` — APIs e ferramentas disponíveis pra usar em skills
 
